@@ -1,0 +1,185 @@
+/* Main Colors */
+:root {
+  --primary-color: #203271;   /* Bright blue */
+  --secondary-color: #9BEAE0; /* Bright green */
+
+  /* Text Colors */
+  --text-main: #101C45;       /* Main text color */
+  --text-primary: #fff;       /* Main text color */
+  --text-secondary: rgba(0, 0, 0, 0.8);  /* Secondary text color or light gray */
+
+  /* Background Colors */
+  --background: #fff;   /* Main background color */
+
+  /* Border Colors */
+  --border: #ddd;          /* General border color */
+  --border-active: #3498db; /* Border color when the element is active or selected */
+
+  /* Hover or Focus Colors */
+  --hover-or-focus: #95a5a6; /* Color that appears when the element is hovered or focused */
+
+  /* Status Colors */
+  --status-success: #2ecc71;   /* Color for success status */
+  --status-failure: #e74c3c;   /* Color for failure or error status */
+  --status-warning: #f39c12;   /* Color for warning or notice status */
+}
+a{
+  text-decoration: none;
+}
+.active{
+  font-weight: bold;
+  color: var(--text-main);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Source Code Pro', monospace;
+  background-color: var(--background);
+}
+.container-holadoc {
+  width: 100%;
+  height: 100vh;
+  padding: 4rem 8rem;
+}
+.container-holadoc header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container-holadoc header .holadoc-profile{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 700;
+  font-size: .8rem;
+}
+.container-holadoc header .holadoc-profile a{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.2rem;
+  color: var(--text-main);
+}
+.container-holadoc header .holadoc-menu {
+
+}
+.container-holadoc header .holadoc-menu ul{
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  font-size: 16px;
+  font-weight: 400;
+}
+.container-holadoc header .holadoc-menu ul li a{
+  color: var(--text-secondary);
+}
+.container-holadoc header .holadoc-menu ul li a:hover{
+  font-weight: 700;
+  color: var(--text-main);
+}
+.container-holadoc header .holadoc-auth ul{
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+.container-holadoc header .holadoc-auth ul li a{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  color: var(--text-main);
+}
+.container-holadoc header .holadoc-auth ul li:nth-child(2) a{
+  border: 2px solid var(--text-main);
+  padding: 5px 10px;
+}
+
+
+/* herro halodoct */
+.container-holadoc .herro-holadoc{
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-holadoc .herro-holadoc .herro-text{
+  width: 42%;
+  font-family: 'DM Sans', sans-serif;
+  margin: 1rem 2rem;
+  height: 400px;
+}
+.container-holadoc .herro-holadoc .herro-text h1{
+  font-size: 3rem;
+}
+.container-holadoc .herro-holadoc .herro-text p{
+  margin-top: 1.4rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+}
+.container-holadoc .herro-holadoc .herro-text a{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.125;
+  color: var(--text-primary);
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  display: inline-block;
+  margin-top: 1.4rem;
+}
+.container-holadoc .herro-holadoc .card-quetes{
+  font-family: 'source code pro', sans-serif;
+  padding: 1.4rem 2rem;
+  width: 300px;
+  position: absolute;
+  right: 300px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(102, 100, 100, 0.274) ;
+  background: #fff;
+}
+
+.container-holadoc .herro-holadoc .card-quetes .header-card-quetes{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-holadoc .herro-holadoc .card-quetes .header-card-quetes h4{
+  font-size: .75rem;
+  font-weight: 700;
+}
+.container-holadoc .herro-holadoc .card-quetes .header-card-quetes .image-profile-card-quetes{
+  img {
+    max-width: 30px;
+    border-radius: 50%;
+    }
+}
+.container-holadoc .herro-holadoc .image-herro{
+  width: 60%;
+  display: flex;
+  justify-content: end;
+}
+.container-holadoc .herro-holadoc .image-herro img{
+  width: 300px;
+}
+
+/* componets */
+.component-main{
+  position: absolute;
+  z-index: -999;
+  right: 430px;
+}
+
+.component-main{
+  width: 12px;
+}
