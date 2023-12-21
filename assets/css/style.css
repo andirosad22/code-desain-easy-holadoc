@@ -149,7 +149,7 @@ body{
   padding: 1.4rem 2rem;
   width: 300px;
   position: absolute;
-  right: 300px;
+  right: 200px;
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(102, 100, 100, 0.274) ;
   background: #fff;
@@ -251,12 +251,6 @@ body{
   background-color: white;
 }
 
-
-
-
-
-
-
 @media (max-width: 1199.98px) { 
   .container-holadoc{
     padding: 3rem 4rem;
@@ -290,11 +284,71 @@ body{
   .container-holadoc header .burger-menu{
     display: flex;
   }
+
+  /* hero-holadoc */
+  .herro-holadoc {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-holadoc .herro-holadoc .herro-text{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .herro-holadoc .herro-text h1{
+
+  }
+  .container-holadoc .herro-holadoc .component-main{
+    position: relative;
+    right: 220px;
+    margin:0;
+    padding: 0;
+    bottom: 0;
+  }
+  .container-holadoc .herro-holadoc .image-herro{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .container-holadoc .herro-holadoc .image-herro img{
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-holadoc .herro-holadoc .card-quetes{
+    position: absolute;
+    bottom: 300px;
+    left: 0;
+  }
+
+  /* card service */
+  .service-card{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-card .card-service-content{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
  }
  
  @media (max-width: 575px) { 
   .container-holadoc{
     padding: 1rem 2rem;
+  }
+  .herro-holadoc {
+    gap: 3rem;
   }
  }
  .container-holadoc header .holadoc-menu.slide{
